@@ -1,0 +1,58 @@
+### WORDPRESS ###
+
+# Config
+.htaccess
+/robots.txt
+/wp-config.php
+/sitemap.xml
+/wordpress/
+/content/debug.log
+/content/advanced-cache.php
+/content/object-cache.php
+/content/wp-cache-config.php
+/content/languages/
+/content/upgrade/
+/content/uploads/
+/content/cache/
+/content/webp-express/
+
+# Plugins
+/content/plugins/*
+!/content/plugins/sitepress-multilingual-cms/
+!/content/plugins/wpml-string-translation/
+!/content/plugins/index.php
+
+# Composer
+/composer.phar
+/composer.lock
+/vendor/
+
+# Node
+/node_modules/
+npm-debug.log
+
+### SYSTEM ###
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Mac OS
+.DS_Store
+
+### EDITOR ###
+
+# PhpStorm
+.idea/
+*.ipr
+*.iws
+*.iml
+
+# NetBeans
+nbproject/

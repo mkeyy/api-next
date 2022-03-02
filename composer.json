@@ -1,0 +1,40 @@
+{
+  "name": "ivn/ivision",
+  "description": "IVN Headless",
+  "license": "proprietary",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "config": {
+    "process-timeout": 300
+  },
+  "autoload": {
+    "psr-0": {"Ivn\\BaseTheme\\Installer": "scripts"}
+  },
+  "scripts": {
+    "post-install-cmd": ["Ivn\\BaseTheme\\Installer::moveInstallerFile"],
+    "post-update-cmd": ["Ivn\\BaseTheme\\Installer::moveInstallerFile"]
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.0",
+    "composer/installers": "*",
+    "johnpbloch/wordpress": "*",
+    "wpackagist-plugin/svg-support": "*",
+    "wpackagist-plugin/regenerate-thumbnails": "*",
+    "wpackagist-plugin/wp-graphql": "*",
+    "cmb2/cmb2": "*",
+    "ext-json": "*"
+  },
+  "extra": {
+    "installer-paths": {
+      "content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "content/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "wordpress"
+  }
+}

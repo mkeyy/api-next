@@ -1,0 +1,11 @@
+{
+  "name": "ivision",
+  "title": "Ivision",
+  "homepage": "http://wordpress.ivn-works.com/",
+  "copyright": "2021",
+  "version": "1.0.0",
+  "devDependencies": {
+  },
+  "dependencies": {
+  },
+}
