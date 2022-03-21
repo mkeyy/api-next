@@ -41,6 +41,7 @@ $IVN_Includes = array(
     IVN_INC_DIR . 'utils.php',
     IVN_INC_DIR . 'enqueue.php',
     IVN_INC_DIR . 'includes.php',
+    IVN_INC_DIR . 'graphql.php'
 );
 
 foreach ($IVN_Includes as $IVN_Include) {
